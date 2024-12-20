@@ -1,0 +1,159 @@
+.nav {
+    background-color: #023E8A;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    @media screen and (max-width: 960px) {
+        transition: 0.8s all ease;
+    }
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    z-index: 1;
+    width: 100%;
+    padding: 0 24px;
+    /* max-width: 1200px; */
+}
+
+.navLogo {
+    width: 80%;
+    padding: 0 6px;
+    display: flex;
+    justify-content: flex-start;
+    /* cursor: pointer; */
+    align-items: center;
+    @media screen and (max-width: 640px) {
+        padding: 0 0px;
+    }
+}
+
+.mobileIcon {
+    display: none;
+    @media screen and (max-width: 768px) {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%,50%);
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: skyblue;
+    }
+}
+
+.navItems {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.navLink {
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    /* border: 1px solid black; */
+    padding: 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: x-large;
+    &:hover {
+        color: #023E8A;
+        background-color: white;
+    }
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 80%;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.navbarButton {
+    background-color: transparent;
+    color: white;
+    border: 1.8px solid lightsteelblue;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    height: 70%;
+    &:hover {
+        background-color: #03045E;
+        color: skyblue;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 0.8rem;
+    }
+}
+
+.mainIcon {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-bottom: 20;
+    /* cursor: pointer; */
+}
+
+.portfolioIcon {
+    padding: 0 4px;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.mobileMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    padding: 12px 40px 24px 40px;
+    background-color: white;
+    transition: all 0.3 ease-in-out;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 5px 10px black;
+    opacity: 1;
+    z-index: 1;
+}
+
+.mobileMenuItems {
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2 ease-in-out;
+    &:hover {
+        color: black;
+    }
+}
+
+.logos {
+    width: 10%;
+    height: 60%;
+    cursor: pointer;
+    color: white;
+    /* margin-left: 25px; */
+}
